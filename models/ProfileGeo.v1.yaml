@@ -4,15 +4,29 @@ description: 'https://developer.twitter.com/en/docs/tweets/enrichments/overview/
 properties:
   country:
     type: string
+    example: United States
+    description: The country location for where the user that created the Tweet is from.
   country_code:
     type: string
+    description: A two-letter ISO-3166 country code that corresponds to the country location for where the user that created the Tweet is from.
+    example: US
   locality:
     type: string
+    example: Birmingham
+    description: The locality location (generally city) for where the user that created the Tweet is from.
   region:
     type: string
+    example: Alabama
+    description: The region location (generally state/province) for where the user that created the Tweet is from.
   sub_region:
     type: string
+    description: The sub-region location (generally county) for where the user that created the Tweet is from.
+    example: Jefferson County
   full_name:
     type: string
+    example: 'Birmingham, Alabama, United States'
+    description: The full name (excluding sub-region) for where the user that created the Tweet is from.
   geo:
     type: string
+    example: "See Below\t"
+    description: An array that includes a lat/long value for a coordinate that corresponds to the lowers granularity location for where the user that created the Tweet is from.
