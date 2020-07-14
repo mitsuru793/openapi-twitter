@@ -1,0 +1,52 @@
+title: Place
+type: object
+description: 'https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/geo-objects#place-dictionary'
+properties:
+  id:
+    type: string
+    example: 01a9a39529b27f36
+    description: 'ID representing this place. Note that this is represented as a string, not an integer.'
+  url:
+    type: string
+    example: 'https://api.twitter.com/1.1/geo/id/01a9a39529b27f36.json'
+    description: 'URL representing the location of additional place metadata for this place. '
+  place_type:
+    type: string
+    example: city
+    description: 'The type of location represented by this place. '
+  name:
+    type: string
+    example: Manhattan
+    description: Short human-readable representation of the place’s name.
+  full_name:
+    type: string
+    example: 'Manhattan, NY'
+    description: Full human-readable representation of the place’s name.
+  country_code:
+    type: string
+    example: US
+    description: Shortened country code representing the country containing this place.
+  country:
+    type: string
+    example: United States
+    description: Name of the country containing this place.
+  bounding_box:
+    type: object
+    description: A bounding box of coordinates which encloses this place.
+    properties:
+      coordinates:
+        type:
+          - string
+          - array
+        description: 'A series of longitude and latitude points, defining a box which will contain the Place entity this bounding box is related to. Each point is an array in the form of [longitude, latitude]. Points are grouped into an array per bounding box. Bounding box arrays are wrapped in one additional array to be compatible with the polygon notation.'
+        items:
+          $ref: ./Coordinates.v1.yaml
+      type:
+        type: string
+        example: Polygon
+        description: The type of data encoded in the coordinates property. This will be “Polygon” for bounding boxes and “Point” for Tweets with exact coordinates.
+  attributes:
+    type:
+      - string
+      - object
+    description: 'When using PowerTrack, 30-Day and Full-Archive Search APIs, and Volume Streams this hash is null.'
