@@ -14,7 +14,7 @@ properties:
     type: string
   derived:
     type: array
-    description: TODO
+    description: ''
     items:
       type: object
       properties:
