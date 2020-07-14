@@ -1,0 +1,56 @@
+title: User
+type: object
+description: 'https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/user-object'
+properties:
+  id:
+    type: integer
+  created_at:
+    type: string
+  name:
+    type: string
+  screen_name:
+    type: string
+  location:
+    type: string
+  derived:
+    type: array
+    description: TODO
+    items:
+      type: object
+      properties:
+        locations:
+          type:
+            - string
+            - array
+          items:
+            $ref: ./ProfileGeo.v1.yaml
+  url:
+    type: string
+  protected:
+    type: string
+  verified:
+    type: string
+  followers_count:
+    type: string
+  friends_count:
+    type: string
+  listed_count:
+    type: integer
+  favourites_count:
+    type: integer
+  statuses_count:
+    type: integer
+  profile_banner_url:
+    type: string
+  profile_image_url_https:
+    type: string
+  default_profile:
+    type: string
+  default_profile_image:
+    type: string
+  withheld_in_countries:
+    type: array
+    items:
+      type: string
+  withheld_scope:
+    type: string

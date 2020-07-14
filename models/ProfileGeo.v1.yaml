@@ -1,0 +1,20 @@
+title: ProfileGeo
+type: object
+properties:
+  country:
+    type: string
+  country_code:
+    type: string
+  locality:
+    type: string
+  region:
+    type: string
+  sub_region:
+    type: string
+  full_name:
+    type: string
+  geo:
+    type: string
+  '':
+    type: string
+description: 'https://developer.twitter.com/en/docs/tweets/enrichments/overview/profile-geo'
