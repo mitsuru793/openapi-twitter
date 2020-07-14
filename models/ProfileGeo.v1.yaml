@@ -1,5 +1,6 @@
 title: ProfileGeo
 type: object
+description: 'https://developer.twitter.com/en/docs/tweets/enrichments/overview/profile-geo'
 properties:
   country:
     type: string
@@ -15,6 +16,3 @@ properties:
     type: string
   geo:
     type: string
-  '':
-    type: string
-description: 'https://developer.twitter.com/en/docs/tweets/enrichments/overview/profile-geo'
