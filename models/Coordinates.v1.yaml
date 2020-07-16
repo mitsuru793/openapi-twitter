@@ -1,0 +1,16 @@
+title: Coordinates
+type: object
+description: 'https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/geo-objects#coordinates'
+x-examples: {}
+properties:
+  coordinates:
+    type: array
+    description: 'The longitude and latitude of the Tweet’s location, as a collection in the form [longitude, latitude].'
+    items:
+      type: number
+      format: float
+      example: '[-97.51087576,35.46500176]'
+  type:
+    type: string
+    example: Point
+    description: "\t\nThe type of data encoded in the coordinates property. This will be “Point” for Tweet coordinates fields."
